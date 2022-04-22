@@ -1,4 +1,12 @@
 # de_microservices_stuff
+## Philosophy 
+Microservice project with separate projects for each service.
+
+Initial development will be REST api.  Will move to some event driven scenarios as the project moves forward.
+
+Prototypes and experiments will be developed in this project to avoid polluting the real project modules.
+
+
 ## Questions
 * How is a custom image repository used?
   * https://skaffold.dev/docs/environment/image-registries/ 
@@ -54,7 +62,8 @@ Run mode deploys code one time
 ## [Configuration](https://skaffold.dev/docs/design/config/)
 * configurations can be imported using "require"
 * Paths are relative to the directory containing the imported configuration file
-  * [Configuration Dependencies Tutorial](https://skaffold.dev/docs/tutorials/config-dependencies/) 
+  * [Configuration Dependencies Tutorial](https://skaffold.dev/docs/tutorials/config-dependencies/)
+  * [Multiple modules each in its own git repo](https://shell.cloud.google.com/?show=ide%2Cterminal)
 
 ## [Skaffold Pipeline](https://skaffold.dev/docs/pipeline-stages/)
 **NOT DONE**
@@ -80,3 +89,4 @@ $isrunning.CloseMainWindow()
 $isrunning | Stop-Process -Force
 }
 ```
+[Multiple modules all in their own git repository](https://stackoverflow.com/questions/1979167/git-submodule-update)
