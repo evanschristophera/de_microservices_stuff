@@ -1,19 +1,21 @@
 # de_microservices_stuff
-## Philosophy 
-Microservice project with separate projects for each service.
+## Philosophy
+[Microservice project with separate projects for each service as shown here](https://github.com/gsquared94/bank-of-anthos-demo)
 
 Initial development will be REST api.  Will move to some event driven scenarios as the project moves forward.
 
 Prototypes and experiments will be developed in this project to avoid polluting the real project modules.
+## Next Steps
+* JIB example into local kubernetes environment
 
+* Postgresql into local kubernetes environment
 
 ## Questions
 * How is a custom image repository used?
-  * https://skaffold.dev/docs/environment/image-registries/ 
-## Notes 
+  * https://skaffold.dev/docs/environment/image-registries/
+## Notes
 * port forward is how endpoints are exposed.
-## Technologies
-https://www.youtube.com/watch?v=jnxj4Ma3zpg
+
 ## Tools
 * [Google Cloud SDK/Plugin](https://cloud.google.com/code/docs/intellij/install)
 
@@ -23,13 +25,14 @@ https://www.youtube.com/watch?v=jnxj4Ma3zpg
 * [K9s Terminal UI to inspect Kubernetes](https://k9scli.io/topics/install/)
 * [minikube local kubernetes](https://minikube.sigs.k8s.io/docs/start/)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-  
   Currently I'm using the minikube install rather than the Docker Desktop Kubernetes.
+* [Java Image Builder (JIB)](https://cloud.google.com/blog/products/application-development/introducing-jib-build-java-docker-images-better)
+  * [Micronaut to Kubernetes Engine Example](https://codelabs.developers.google.com/codelabs/cloud-micronaut-kubernetes/#0)
 
 ## Resources
 *[Youtube video for Skaffold and Kubernetes](https://www.youtube.com/watch?v=Fu5CpVaiE_E)
-  * [Gotcha on windows!!!](https://youtu.be/Fu5CpVaiE_E?t=1707)
-  * [Helm](https://youtu.be/Fu5CpVaiE_E?t=1780)
+* [Gotcha on windows!!!](https://youtu.be/Fu5CpVaiE_E?t=1707)
+* [Helm](https://youtu.be/Fu5CpVaiE_E?t=1780)
 
 # Skaffold Notes
 ## Features
@@ -74,6 +77,8 @@ Run mode deploys code one time
 [Kubernetes in 5 minutes](https://www.youtube.com/watch?v=PH-2FfFD2PU)
 pod is th smallest unit of deployment in k8s
 
+[Accessing a Postgres Instance in Kubernetes](https://docs.vmware.com/en/VMware-Tanzu-SQL-with-Postgres-for-Kubernetes/1.6/tanzu-postgres-k8s/GUID-accessing.html)
+
 The yaml file is fed to the k8s cluster services which builds the workers
 
 # Future Reads
@@ -81,6 +86,8 @@ The yaml file is fed to the k8s cluster services which builds the workers
 
 
 # Handy Stuff
+Git submodules.  Using in this project as an example.
+
 Kill docker desktop from Powershell:
 ```
 $isrunning = Get-Process "Docker Desktop" -ErrorAction SilentlyContinue
@@ -90,3 +97,6 @@ $isrunning | Stop-Process -Force
 }
 ```
 [Multiple modules all in their own git repository](https://stackoverflow.com/questions/1979167/git-submodule-update)
+
+## Technologies
+https://www.youtube.com/watch?v=jnxj4Ma3zpg
