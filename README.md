@@ -5,6 +5,8 @@
 Initial development will be REST api.  Will move to some event driven scenarios as the project moves forward.
 
 Prototypes and experiments will be developed in this project to avoid polluting the real project modules.
+### Impediments
+The vast majority of examples and tutorials are geared towards cloud environments, AWS and Google Cloud.  Moving to a local development workflow is another layer that needs to be worked through.    
 ## Next Steps
 * JIB example into local kubernetes environment
 
@@ -20,7 +22,6 @@ Prototypes and experiments will be developed in this project to avoid polluting 
 * [Google Cloud SDK/Plugin](https://cloud.google.com/code/docs/intellij/install)
 
   This plugin can be configured to use and installed skaffold executable or use its own bundled tool.
-
 * [Skaffold - Google developed tool for managing K8s](https://skaffold.dev/)
 * [K9s Terminal UI to inspect Kubernetes](https://k9scli.io/topics/install/)
 * [minikube local kubernetes](https://minikube.sigs.k8s.io/docs/start/)
@@ -86,7 +87,14 @@ The yaml file is fed to the k8s cluster services which builds the workers
 
 
 # Handy Stuff
-Git submodules.  Using in this project as an example.
+Git submodules.  Using in this project as an example.  Each subproject can be opened in IntelliJ in a separate window/project.
+
+[Multiple modules all in their own git repository](https://stackoverflow.com/questions/1979167/git-submodule-update)
+
+```
+git submodule update --recursive
+```
+
 
 Kill docker desktop from Powershell:
 ```
@@ -96,7 +104,6 @@ $isrunning.CloseMainWindow()
 $isrunning | Stop-Process -Force
 }
 ```
-[Multiple modules all in their own git repository](https://stackoverflow.com/questions/1979167/git-submodule-update)
 
 ## Technologies
 https://www.youtube.com/watch?v=jnxj4Ma3zpg
